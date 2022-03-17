@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MybooksController">
+   <children>
+      <AnchorPane prefHeight="79.0" prefWidth="800.0" style="-fx-background-color: #fed700;">
+         <children>
+            <Label layoutX="24.0" layoutY="18.0" prefHeight="37.0" prefWidth="171.0" text="My Books">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="37.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonBack" layoutX="686.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: #fed700; -fx-cursor: hand;" text="Back">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="564.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="table" layoutX="37.0" layoutY="30.0" prefHeight="478.0" prefWidth="725.0">
+              <columns>
+                <TableColumn fx:id="title" prefWidth="155.6000099182129" style="-fx-background-color: #Fed700;" text="Title" />
+                <TableColumn fx:id="author" prefWidth="169.7999725341797" style="-fx-background-color: #fed700;" text="Author" />
+                  <TableColumn fx:id="issueDate" prefWidth="204.0" style="-fx-background-color: #fed700;" text="Date of Issue" />
+                  <TableColumn fx:id="returnDate" prefWidth="194.39996337890625" style="-fx-background-color: #fed700;" text="Due Date" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

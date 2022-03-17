@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddBookController">
+   <children>
+      <AnchorPane prefHeight="53.0" prefWidth="800.0" style="-fx-background-color: #FED700;">
+         <children>
+            <Label layoutX="61.0" layoutY="9.0" text="Add Book">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="31.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="36.0" fitWidth="33.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_back" layoutX="9.0" layoutY="6.0" mnemonicParsing="false" opacity="0.0" prefHeight="42.0" prefWidth="46.0" />
+            <Label fx:id="label_username" layoutX="658.0" layoutY="18.0" text="Username">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="618.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="59.0" layoutY="49.0" text="New Book Details">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_title" layoutX="59.0" layoutY="115.0" prefHeight="42.0" prefWidth="367.0" promptText="Title" />
+            <TextField fx:id="tf_author" layoutX="59.0" layoutY="237.0" prefHeight="42.0" prefWidth="367.0" promptText="Author" />
+            <TextField fx:id="tf_language" layoutX="59.0" layoutY="359.0" prefHeight="42.0" prefWidth="367.0" promptText="Language" />
+            <Button fx:id="button_save" layoutX="569.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: #fed700;" text="Save">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

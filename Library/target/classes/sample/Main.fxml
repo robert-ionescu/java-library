@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController">
+   <children>
+      <AnchorPane prefHeight="56.0" prefWidth="800.0" style="-fx-background-color: #FED700;">
+         <children>
+            <Label layoutX="69.0" layoutY="10.0" text="  Home  ">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="31.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox" layoutX="743.0" opacity="0.0" prefHeight="46.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-cursor: hand;" />
+            <ImageView disable="true" fitHeight="36.0" fitWidth="37.0" layoutX="750.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image></ImageView>
+            <Label fx:id="label_username" layoutX="680.0" layoutY="19.0" text="Username">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@book.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_adminPanel" layoutX="539.0" layoutY="16.0" mnemonicParsing="false" style="-fx-background-color: #FED700; -fx-cursor: hand;" text="Admin Panel">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="562.0" prefWidth="800.0">
+         <children>
+            <ImageView disable="true" fitHeight="26.0" fitWidth="22.0" layoutX="571.0" layoutY="35.0" preserveRatio="true">
+               <image>
+                  <Image url="@search.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_search" layoutX="567.0" layoutY="33.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-cursor: hand;" />
+            <TextField fx:id="tf_search" layoutX="221.0" layoutY="33.0" prefHeight="26.0" prefWidth="346.0" promptText="Search..." />
+            <TableView fx:id="table" layoutX="91.0" layoutY="91.0" prefHeight="396.0" prefWidth="607.0">
+              <columns>
+                <TableColumn fx:id="title" prefWidth="213.1999969482422" style="-fx-background-color: #fed700;" text="Title" />
+                <TableColumn fx:id="author" prefWidth="242.79998779296875" style="-fx-background-color: #fed700;" text="Author" />
+                  <TableColumn fx:id="language" prefWidth="149.60002441406255" style="-fx-background-color: #fed700;" text="Language" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
